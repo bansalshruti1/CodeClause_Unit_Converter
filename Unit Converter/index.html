@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" conten="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Unit Converter</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            padding: 50px 100px;
+            background-color: aqua;
+            margin-top: -70px;
+            margin-left: 70px;
+            text-align: center;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            text-align: center;
+            background-color: rgb(0, 49, 139);
+            border-radius: 30px;
+            margin: 100px;
+            margin-bottom: 700px;
+        }
+
+        h1 {
+            margin-top: 70px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        #container1 {
+            margin: 30px auto 0px auto;
+            width: 450px;
+            text-align: center;
+            background-color: lightblue;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 3);
+        }
+
+
+        .input-div {
+            display: inline-block;
+        }
+
+        .inp {
+            padding: 5px 10px;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 150px;
+            text-align: center;
+        }
+
+        #container2 {
+            margin: 30px auto 0px auto;
+            width: 450px;
+            text-align: center;
+            background-color: rgb(195, 173, 230);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 3);
+
+
+        }
+
+        .output-div {
+            display: inline-block;
+        }
+
+        label {
+            font-size: 32px;
+            font-weight: italic;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div id="container1">
+            <div class="input-div">
+                <label for="UnitFrom">From:</label><br>
+
+                <select class="group" id="InputUnitFrom">
+                    <option selected value="meter">Meter</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="decimeter">Decimeter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="foot">Foot</option>
+                    <option value="inch">Inch</option>
+                    <option value="mile">Mile</option>
+                    <option value="yard">Yard</option>
+                </select>
+                <input type="number" value="1" id="Meter" class="inp">
+            </div>
+
+            <div class="input-div">
+                <label for="UnitTo">To:</label><br>
+                <select class="group" id="resultUnitFrom">
+                    <option selected value="Centimeter">Centimeter</option>
+                    <option value="meter">Meter</option>
+                    <option value="decimeter">Decimeter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="foot">Foot</option>
+                    <option value="inch">Inch</option>
+                    <option value="mile">Mile</option>
+                    <option value="yard">Yard</option>
+                </select>
+                <input type="number" id="Centimeter" class="inp">
+            </div>
+            <br>
+            <div class="container2">
+                <div id="outputInfo" class="output-div">
+                    <h2>Basic Information</h2>
+                    
+                    <ul>
+                        <li>1 Yard (yd) = 0.9144 Meter (m)</li>
+                        <li>1 Mile (mi) = 1609.34 Meter (m)</li>
+                        <li>1 Inch (in) = 0.0254 Meter (m)</li>
+                        <li>1 Foot (ft) = 0.3048 Meter (m)</li>
+                        <li>1 Kilometer (km) = 1000 Meter (m)</li>
+                        <li>1 Decimeter (dm) = 0.1 Meter (m)</li>
+                        <li>1 Centimeter (cm) = 0.01 Meter (m)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="lengthconverter.js"></script>
+</body>
+
+</html>
